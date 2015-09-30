@@ -18,7 +18,13 @@ program name: arbiter
               
               This script should be run as a cron job (every 5 to 15 mins
               should be fine). Output is captured in a rotated log file.
-              
+
+Example usage - Run arbiter every 5 minutes:
+
+crontab -e
+*/5 * * * * /root/scripts/arbiter --shost sabhost --sport 8100 --apikey 8a7c6a876c87a6cb786acb87abc876ba8cb \
+                                  --uhost uthost --uport 8200 --uname utuser --upasswd utpassword >/dev/null 2>&1
+
 Tested using SABnzbd 0.7.20, uTorrent 2.2.1 and python 2.7.10.
 
 Based in part on code written by ftao / py-utorrent authored Nov 21, 2014
