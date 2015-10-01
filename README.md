@@ -59,14 +59,14 @@ crontab -e
 
 ## <span style="background-color:yellow; ">rtorrent OpenVPN Debian Linux (Mint 17.2)</span>
 
-**rtorrent upstart (these files should be created in /etc/init)**
+**rtorrent upstart (these files should be copied to /etc/init)**
 
 | file | description |
 |------|-------------|
 | **rtorrent.conf** | Start and stop rtorrent as an upstart controlled service. rtorrent is started when the VPN is established and terminated when the VPN is disconnected.|
 | **port-forward.conf** | Polls PIA server for port forward assignment. Polling is started when VPN is established and terminated when VPN is disconnected. |
 
-**OpenVPN Scripts and Configuration (these files should be created in /etc/openvpn)**
+**OpenVPN Scripts and Configuration (these files should be copied to /etc/openvpn)**
 
 | file | description |
 |------|-------------|
@@ -76,7 +76,7 @@ crontab -e
 | **login.ini** | Two line file. First line is VPN username, and second line is VPN password. |
 | **pia-clientid.ini** | Unique string composed of letters and numbers. Can be generated using the following commands: <code>head -n 100 /dev/urandom &#124; md5sum &#124; tr -d " -"</code> |
 
-**rtorrent XMLRPC (the following file should be renamed to rtrpc, made executable, and created in /usr/bin)**
+**rtorrent XMLRPC (the following file should be renamed to rtrpc, made executable, and copied to /usr/bin)**
 
 | file | description |
 |------|-------------|
