@@ -46,4 +46,4 @@ A set of scripts for managing multi-media programs.
 
 <b>rtorrent XMLRPC</b> (the following file should be renamed to rtrpc, made executable, and created in /usr/bin)
 
-<b>rtrpc.py</b> : Python module for interacting with rtorrent's XML-RPC interface. The port-forward.conf scripts assumes this script is executable and available in /usr/bin or in a PATH location supported by upstart.
+<b>rtrpc.py</b> : Python module for interacting with rtorrent's XML-RPC interface. The port-forward.conf script assumes this script is executable and available in /usr/bin or in a PATH location supported by upstart.
