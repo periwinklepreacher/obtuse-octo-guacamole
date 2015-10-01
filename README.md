@@ -44,6 +44,6 @@ A set of scripts for managing multi-media programs.
 
 <b>pia-clientid.ini</b> : Unique string composed of letters and numbers. Can be generated using the following commands: head -n 100 /dev/urandom | md5sum | tr -d " -"
 
-<b>rtorrent XMLPRC</b> (the following file should be renamed to rtrpc, made executable, and created in /usr/bin)
+<b>rtorrent XMLRPC</b> (the following file should be renamed to rtrpc, made executable, and created in /usr/bin)
 
 <b>rtrpc.py</b> : Python module for interacting with rtorrent's XML-RPC interface. The port-forward.conf scripts assumes this script is executable and available in /usr/bin or in a PATH location supported by upstart.
