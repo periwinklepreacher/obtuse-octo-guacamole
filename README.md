@@ -25,3 +25,25 @@ A set of scripts for managing multi-media programs.
       Finally, globbing is used to specify a group of media storage folders
       so that files can be copied to volumes with the most amount of
       free space.
+
+<b>rtorrent upstart OpenVPN</b> (these files should be created in /etc/init)
+
+<b>rtorrent.conf</b> : Start and stop rtorrent as an upstart controlled service. rtorrent is started when the VPN is established and terminated when the VPN is disconnected.
+
+<b>port-forward.conf</b> : Polls PIA server for port forward assignment. Polling is started when VPN is established and terminated when VPN is disconnected.
+
+<b>OpenVPN Scripts and Configuration</b> (these files should be created in /etc/openvpn)
+
+<b>rtorrent-up.sh</b> : Creates a split routing table to restrict rtorrent traffic to the VPN. Also emits an upstart torrent-up event to launch rtorrent as a service bound to the local VPN interface.
+
+<b>rtorrent-down.sh</b> : Deletes the torrent split routing table and emits an upstart torrent-down event. The event will cause rtorrent to be shut down and to clean up any temporary files.
+
+<b>torrent.openvpn.conf</b> : Sample OpenVPN configuration file. Pay attention to the following attributes: script-security, route-nopull, up, down, and auth-user-pass.
+
+<b>login.ini</b> : Two line file. First line is VPN username, and second line is VPN password.
+
+<b>pia-clientid.ini</b> : Unique string composed of letters and numbers. Can be generated using the following commands: head -n 100 /dev/urandom | md5sum | tr -d " -"
+
+<b>rtorrent XMLPRC</b> (this file should be renamed to rtrpc and created in /usr/bin)
+
+<b>rtrpc.py</b> : Python module for interacting with rtorrent's XML-RPC interface. The port-forward.conf scripts assumes this script is executable and available in /usr/bin or in a PATH location supported by upstart.
