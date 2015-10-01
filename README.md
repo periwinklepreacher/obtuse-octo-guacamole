@@ -59,7 +59,7 @@ crontab -e
 
 ## <span style="background-color:yellow; ">rtorrent OpenVPN Debian Linux (Mint 17.2)</span>
 
-Follow these instructions to get rtorrent installed and running (skip the init.d scripts as the instuctions that follow show how to use upstart and openvpn to secure and control an rtorrent daemon):
+Follow this link to get rtorrent installed and running on a debian system (skip the init.d integration as the scripts that follow use upstart and openvpn to secure and control an rtorrent daemon):
 http://terminal28.com/how-to-install-and-configure-rutorrent-rtorrent-libtorrent-xmlrpc-screen-debian-7-wheezy/
 
 **rtorrent upstart (these files should be copied to /etc/init)**
