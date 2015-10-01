@@ -3,7 +3,7 @@ A set of scripts for managing multi-media programs.
 
 <b>arbiter</b>     : A python 2 script for setting uTorrent download rate depending on state of SABnzbd.
 
-<b>postprocess</b> : A python 2 script for moving files from uTorrent download directory to storage folder
+<b>postprocess</b> : A python 2 script for moving files from uTorrent download directory to a storage folder
               or handoff to media library manager.
               
       This script pre-processes compressed archives and copies the media
