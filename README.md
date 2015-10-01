@@ -54,7 +54,7 @@ crontab -e
 | Python 2.7.X is installed | `python2 --version` | Python 2.7.10 |
 | Execute permissions are set | `ls -la arbiter` | -rwxr-xr-x 1 root root 8221 Jan 04 19:02 arbiter |
 | SABnzbd Host, Port, Key configured and enabled | SABnzbd > Config > General | http://wiki.sabnzbd.org/configure-general-0-7 |
-| uTorrent Host, Post, User, Password configured and enabled | uTorrent > Preferences > WebUI | http://forum.utorrent.com/topic/49588-%C2%B5torrent-webui/ |
+| uTorrent Host, Port, User, Password configured and enabled | uTorrent > Preferences > WebUI | http://forum.utorrent.com/topic/49588-%C2%B5torrent-webui/ |
 | Running manually generates a log entry (default location is /var/log/arbiter.log) | `tail -f /var/log/arbiter.log` | Jan-16 04:00:01 SABnzbd is IDLE uTorrent sched_enable set to 0 |
 
 ## <span style="background-color:yellow; ">rtorrent OpenVPN Debian Linux (Mint 17.2)</span>
