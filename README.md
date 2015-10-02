@@ -6,4 +6,4 @@
 
 **postprocess** : A python 2 script for copying files from the uTorrent download directory to a local file server or to handoff to a local media library manager.
 
-See wiki for more information ---->>>
+See wiki for more information https://github.com/periwinklepreacher/obtuse-octo-guacamole/wiki
